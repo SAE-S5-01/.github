@@ -1,0 +1,31 @@
+name: User storie
+description: Describe user storie
+title: "<title>"
+labels: ["User Story"]
+projects: "SAE-S5-01-Developpement-avance/1"
+
+body:
+    - type: textarea
+      id: summary
+      attributes:
+          label: User Story
+          description: As a / I want / In order to
+          value: |
+              **As a**
+              **I want**
+              **In order to**
+      validations:
+          required: true
+
+    - type: textarea
+      id: acceptation-test
+      attributes:
+          label: Acceptation Test
+          description: Given / When / Then
+          value: |
+              **Given**
+              **When**
+              **Then**
+          render: markdown
+      validations:
+          required: true
